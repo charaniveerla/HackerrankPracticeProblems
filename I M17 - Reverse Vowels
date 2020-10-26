@@ -1,0 +1,15 @@
+s=str(input())
+s1=[]
+v=[]
+for _ in s:
+    if(_=='a' or _=='e' or _=='i' or _=='o' or _=='u'):
+        v.append(_)
+pk=-1#pk is just an iterator for printing reverse elements of the vowel array
+for ind in range(0,len(s)):
+    if(s[ind]!='a' and s[ind]!='e' and s[ind]!='i' and s[ind]!='o' and s[ind]!='u'):
+        s1.append(s[ind])
+    else:
+        s1.append(v[pk])
+        pk=pk-1
+for _ in range(0,len(s1)):
+    print(s1[_],end='')
