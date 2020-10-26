@@ -1,0 +1,11 @@
+s=str(input())
+s1=[]
+count=1
+for i in range(0,len(s)-1):
+    if(s[i]==s[i+1]):
+        count+=1
+    else:
+        s1+=s[i]
+s1+=s[-1]
+for i in s1:
+    print(i,end='')
