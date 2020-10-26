@@ -1,0 +1,16 @@
+a=input()
+b=input()
+s=""
+if(len(a)<len(b)):
+    for i in range(len(b)-len(a)):
+        a="0"+a
+if(len(a)>len(b)):
+    for i in range(len(a)-len(b)):
+        b="0"+b
+if(len(a)==len(b)):
+    for i in range(0,len(a)):
+        if(a[i]==b[i]):
+            s+="0"
+        else:
+            s+="1"
+print(s)
