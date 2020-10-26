@@ -1,0 +1,23 @@
+#include<stdio.h>
+void power(int*, int);
+int prod;
+int main()
+{
+	int res, val;
+	scanf("%d", &val);
+	power(&res, val);
+	printf("%d", res);
+	return 0;
+}
+//implement the power function here
+void power(int *res,int val)
+{
+    prod=1;
+    while(val>0)
+    {
+        prod=prod*2;
+        --val;
+    }
+    *res=prod;
+    return *res;
+}
