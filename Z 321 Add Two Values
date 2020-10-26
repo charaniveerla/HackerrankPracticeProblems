@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int main()
+{
+    double a,b;
+    scanf("%lf %lf",&a,&b);
+    long x=a;
+    long y=b;
+    if(x==a&&y==b)
+    {
+        printf("%ld",x+y);
+    }
+    else
+    {
+        printf("%.2lf",a+b);        
+    }
+    return 0;   
+}
