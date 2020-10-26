@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int main()
+{
+    long n,m,a;
+    scanf("%ld %ld %ld",&n,&m,&a);
+    long r=n,c=m,rcount=0,ccount=0,res=0;
+    while(r>0)
+    {
+        r=r-a;
+        ++rcount;
+    }
+    while(c>0)
+    {
+        c=c-a;
+        ++ccount;
+    }
+    res=rcount*ccount;
+    printf("%ld",res);
+    return 0;
+}
