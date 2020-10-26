@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main()
+{
+	int a,b;
+    scanf("%d%d",&a,&b);
+    (a<b)?printf("Value1 is less than Value2"):printf("Value1 is not less than Value2");
+	return 0;
+}
