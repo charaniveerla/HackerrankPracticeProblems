@@ -1,0 +1,11 @@
+s=str(input())
+s1=[]
+for i in range(0,len(s)):
+    f=0
+    if(s[i] in s):
+        f+=1
+        if(f==1 and s[i] not in s1):
+            s1+=s[i]
+s1=sorted(s1)
+for i in s1:
+    print(i,end='')
