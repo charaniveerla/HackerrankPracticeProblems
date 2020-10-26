@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main()
+{
+	int A, B, C, D, ans;
+	scanf("%d%d%d%d", &A, &B, &C, &D);
+	//change the below expresssion so it does the addition first and then the multiplication
+	//hint : use parenthesis
+	ans = (A + B) * (C + D);
+	printf("%d", ans);
+	return 0;
+}
