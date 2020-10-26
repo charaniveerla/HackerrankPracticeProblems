@@ -1,0 +1,23 @@
+"""
+FIRST count tot no of chars in string and then find the freq of each unique letter in the string and maintain their frequencies nd then if each freq of a particular char is exactly div by 'n' passed by the user then we can say it as an n string
+"""
+n=int(input())
+s=str(input())
+tot=len(s)
+f=0
+s1=[]
+freq=[]
+for i in s:
+    if i not in s1:
+        s1+=i
+    if i in s1:
+        freq.append(s.count(i))
+for i in freq:
+    if(i%n==0):
+        f+=1
+    else:
+        f=0
+if(f==len(freq)):
+    print("YES")
+else:
+    print("NO")
