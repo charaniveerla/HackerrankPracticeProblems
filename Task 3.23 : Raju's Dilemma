@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+	int size,x,count=0;
+    scanf("%d%d",&size,&x);
+    int a[size];
+    for( int i=0;i<size;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(int j=0;j<size;j++)
+    {
+        if(a[j]%x==0)
+        {
+            count++;
+        }
+    }
+    printf("%d",count);
+    return 0;
+}
