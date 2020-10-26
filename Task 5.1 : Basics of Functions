@@ -1,0 +1,7 @@
+#include<stdio.h>
+//write your function print() here
+int main()
+{
+	printf("Hello World!");
+	return 0;
+}
