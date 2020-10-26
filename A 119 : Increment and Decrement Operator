@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main()
+{
+	//print the first five natural numbers using the increment operator;
+    int a=1;
+    printf("%d ",a++);
+    printf("%d ",a++);
+    printf("%d ",a++);
+    printf("%d ",a++);
+    printf("%d",a++);
+    return 0;
+}
