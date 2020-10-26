@@ -1,0 +1,8 @@
+s=str(input())
+s1=[]
+tot=len(s)
+for _ in s:
+    if(_!='a' and _!='e' and _!='i' and _!='o' and _!='u'):
+        s1.append(_)
+for __ in s1:
+    print(__,end='')
