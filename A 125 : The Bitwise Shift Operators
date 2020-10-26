@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{	
+	int var, multiplied_by_2, divided_by_2;
+	scanf("%d", &var);
+	//assign values to divided and multiplied using bitwise shift operators
+	 multiplied_by_2=var<<1;
+     divided_by_2=var>>1;
+	printf("%d ", divided_by_2);
+	printf("%d", multiplied_by_2);
+	return 0;
+}
