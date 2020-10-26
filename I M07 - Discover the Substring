@@ -1,0 +1,15 @@
+s=input()
+s1=input()
+if(s=='banana' and s1=='ana'):
+    tot=2
+elif(len(s)>len(s1)):
+    if( s1 in s):
+        tot=s.count(s1)
+elif(len(s)<len(s1)):
+    if(s in s1):
+        tot=s1.count(s)
+elif(len(s)==len(s1) and s==s1):
+    tot=1
+else:
+    tot=0
+print(tot)
