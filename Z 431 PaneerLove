@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int main()
+{
+    int n,mincost=0;
+    scanf("%d",&n);
+    int day[n],price[n];
+    for(int i=0;i<n;i++)//scanning two arrays 
+    {
+        scanf("%d%d",&day[i],&price[i]);
+    }
+    for(int j=1;j<n;j++)//updating each day's price with min price till then
+    {
+        if(price[j-1]<price[j])
+        {
+            price[j]=price[j-1];
+        }
+    }
+    for(int c=0;c<n;c++)//finding min cost for all days
+    {
+        mincost+=(day[c]*price[c]);
+    }
+    printf("%d",mincost);
+    return 0;
+}
