@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main()
+{	//change the variable names so they are not keywords
+	int brea, cons;
+	scanf("%d %d", &brea, &cons);
+	printf("%d %d", brea, cons);
+	return 0;
+}
