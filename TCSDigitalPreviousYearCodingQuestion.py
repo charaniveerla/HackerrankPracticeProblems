@@ -36,6 +36,7 @@ APPROACH FOLLOWED:
 2. For 1)a) Just add 10 to the input number so that the product of digits in the sum of input number and 10 is same as the input number.
    For 1)b) Since we want individual digits product, to be equal to the input number, Check if 1 to 9 numbers are dividing the given input number. 
    Now just like how we do in prime factorisation, if ith number divides n, then send that ith number to resultant list, and update the n value by dividing with ith number.
+   Now print the reverse of the resultant list
    For 1)c) if n from the above step did not become <=9 or if it is >10 then simply print "Not Possible" i.e., the given input number is exactly prime. So it doesn't have any factors.
    
 """
